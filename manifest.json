@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Work Progress Bar",
+  "version": "1.0.0",
+  "description": "就業時間の進捗を右上に常時表示する Chrome 拡張",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Work Progress"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["src/content.tsx"]
+    }
+  ]
+}
